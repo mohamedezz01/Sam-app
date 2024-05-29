@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="D:\3rd year\web/ICON4.ico" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <meta name="description" content=" Your Simple & Affordable Matchmaker for Finding Your Perfect Home">
+    <meta name="keyword" content="houses,homes,rent,buy,villas,prices">
+    <link href="style.css" rel="stylesheet">
+
+    <title>SAM</title>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="D:\3rd year\web/ICON4.png" alt="Logo">
+    </div>
+    
+    <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>SAM</p>
+            
+        </div>
+
+        <div id="mySidebar" class="sidebar">
+          <!-- <br> -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#"onclick="redirectToHome()">Home</a>
+          <a href="#"onclick="redirectToProfile()">Profile</a>
+          <a href="#" onclick="redirectToSettings()">Settings</a>
+          <a  href="#" onclick="redirectToGame()">Game</a>
+          <a  href="#" onclick="logout()">Logout</a>
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()"><i class="gg-profile"></i></button>  
+        </div> 
+
+
+       </nav>
+
+       <h1 class="P-head">Profile</h1>
+
+
+      <div class="P-container">
+      <label class="P-lablel" for="bx-user"><i class="bx bx-user"> Username </i></label><br>
+      <span for="name" class="P-input" id="nameInfo"></span><br>
+
+      <label class="P-lablel" for="email"><i class="bx bx-envelope"> Email </i></label><br>
+      <span for="email" class="P-input" id="emailInfo"></span><br>
+</div>
+
+      <div class="P-container">
+        <label class="P-lablel" for="phone"><i class="bx bx-phone"> Phone </i></label><br>
+        <span for="phone" class="P-input" id="phoneInfo"></span><br>
+
+        <label class="P-lablel" for="birthdate"><i class="bx bx-calendar"> Birthdate </i></label><br>
+      <span for="birthdate" class="P-input" id="birthdateInfo"></span><br>
+      </div>    
+
+
+
+<div class="P-container">
+      <label class="P-lablel" for="address"><i class="bx bx-map"> Governorate </i></label><br>
+      <span for="address" class="P-input" id="govInfo"></span><br>
+</div>
+
+      <div class="drops">
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+        <div class="drop drop-6"></div>
+        <div class="drop drop-7"></div>
+      </div>
+      
+    </div>
+      
+  
+        <script src="script.js"></script>
+       
+      </body>
+          </html>  
+       

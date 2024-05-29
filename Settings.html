@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="D:\3rd year\web/ICON4.ico" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <meta name="description" content=" Your Simple & Affordable Matchmaker for Finding Your Perfect Home">
+    <meta name="keyword" content="houses,homes,rent,buy,villas,prices">
+    <link href="style.css" rel="stylesheet">
+
+    <title>SAM</title>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="D:\3rd year\web/ICON4.png" alt="Logo">
+    </div>
+    <div class="wrapper">
+       
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>SAM</p>
+            
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <!-- <br> -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#"onclick="redirectToHome()">Home</a>
+            <a href="#"onclick="redirectToProfile()">Profile</a>
+            <a href="#" onclick="redirectToSettings()">Settings</a>
+            <a  href="#" onclick="redirectToGame()">Game</a>
+            <a  href="#" onclick="logout()">Logout</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()"><i class="gg-profile"></i></button>  
+          </div> 
+       </nav>
+       <div class="Swrapper">
+        <h1 style="color: white; text-align: center;">Account Settings</h1>
+        <br>  <br>  <br>
+        <h2>Account Info</h2>
+        <br>  <br>  <br>
+        <h2 >Account Password</h2>
+        <br>  <br>  <br>
+        <h2>Delete account</h2>
+        <br> 
+
+
+
+<form id="form2"  style="position: absolute; bottom:-10%; left:17%">
+        
+        <input id="currentPassword" type="password" placeholder="Old Password">
+        <input id="newPassword" type="password" placeholder="New Password">
+        <input id="confirmPassword" type="password" placeholder="Confirm Password">
+        <button type="submit"> Change Password</button>
+
+</form>
+
+<form id="form3"  style="position: absolute; bottom:-40%; left:17%">
+
+<input id="Email" type="email" placeholder="Email">
+<input id="Password" type="password" placeholder="Password">
+<input  id="ConfirmPassword" type="password" placeholder="Confirm Password" >
+<button  type="submit"> Delete Account</button>
+</form>
+
+
+<!-- <form id="form1" style="position: absolute; bottom:25%; left:17%"> -->
+  
+    <input class="Swrapper_input" id="FirstName" type="text" placeholder="First Name">
+    <input class="Swrapper_input" id="LastName" type="text" placeholder="Last Name">
+    <input class="Swrapper_input" id="Phone" type="number" placeholder="Phone">
+    <input class="Swrapper_input" id="DateOfBirth" type="date" placeholder="Birthdate">
+    <br>
+    <select class="Swrapper_input" id="Governorate" class="dropdown">
+        <option value="">Governorate</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Aswan">Aswan</option>
+        <option value="Asyut">Asyut</option>
+        <option value="Beheira">Beheira</option>
+        <option value="Beni Suef">Beni Suef</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Dakahlia">Dakahlia</option>
+        <option value="Damietta">Damietta</option>
+        <option value="Faiyum">Faiyum</option>
+        <option value="Gharbia">Gharbia</option>
+        <option value="Giza">Giza</option>
+        <option value="Ismailia">Ismailia</option>
+        <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+        <option value="Luxor">Luxor</option>
+        <option value="Matruh">Matruh</option>
+        <option value="Minya">Minya</option>
+        <option value="Monufia">Monufia</option>
+        <option value="New Valley">New Valley</option>
+        <option value="North Sinai">North Sinai</option>
+        <option value="Port Said">Port Said</option>
+        <option value="Qalyubia">Qalyubia</option>
+        <option value="Qena">Qena</option>
+        <option value="Red Sea">Red Sea</option>
+        <option value="Sharqia">Sharqia</option>
+        <option value="Sohag">Sohag</option>
+        <option value="South Sinai">South Sinai</option>
+        <option value="Suez">Suez</option>
+    </select>         
+    <button class="Swrapper_button" id ="changeInfo"> Change Info</button>
+<!-- </form> -->
+
+</div>
+    </div>
+    <footer>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: SAMapp@modernacademy.com</p>
+            <p>Phone: +20 102-6393-722</p>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 SAM. All Rights Reserved.</p>
+    </footer>
+        <script src="script.js"></script>
+       
+      </body>
+          </html>  
+       

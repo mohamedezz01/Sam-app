@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="D:\3rd year\web/ICON4.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="description" content=" Your Simple & Affordable Matchmaker for Finding Your Perfect Home">
+    <meta name="keyword" content="houses,homes,rent,buy,villas,prices">
+
+  <link href="style.css" rel="stylesheet">
+    <title>SAM</title>
+</head>
+<body>
+
+  <div class="logo">
+    <img src="D:\3rd year\web/ICON4.png" alt="Logo">
+</div>
+
+ <div class="wrapper">
+ 
+  <div class="container2">
+    <h2>Find your Perfect match</h2>
+    <div class="filter-bar2 filter-background2">
+      <div class="f-nm">
+        <label id="Square_Meter_label"></label>
+      <input type="number" placeholder="size" id="Square_Meter" inputmode="numeric" min="1" max="200" oninput="limitLength(this)">
+      </div>
+
+      <div class="f-nm">
+      <label id="Age_of_house_label"></label>
+      <select id="Age_of_house">
+        <option value="">Age of house</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+      </div>
+
+      <div class="f-nm">
+        <label id="Total_rooms_label"></label>
+    <select id="Total_rooms">
+        <option value="">Rooms</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+    </select>
+
+      </div>
+
+      <div class="f-nm">
+        <label id="Total_Bath_label"></label>
+    <select id="Total_Bath">
+        <option value="">Bathrooms</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+      </div>
+      <div class="f-nm">
+        <label id="Floor_label"></label>
+    <select id="Floor">
+        <option value="">Floor</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+    </select>
+      </div>
+
+      <div class="f-nm">
+        <label id="City_label"></label>
+    <select id="City">
+      <option value="">City</option>
+      <option value="Helwan">Helwan</option>
+      <option value="El_Zamalek">El_Zamalek</option>
+      <option value="Shobra">Shobra</option>
+      <option value="El_Maadi">El_Maadi</option>
+  </select>
+      
+
+    <button id="find">Find</button>
+
+    <input id="Bprice" type="text" placeholder="Excepected price" readonly>
+    </div>
+    </div>
+    <div id="NearestMatch"></div>
+ 
+
+  <nav class="nav">
+    <div class="nav-logo">
+        <p>SAM</p>
+        
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+      <!-- <br> -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#"onclick="redirectToHome()">Home</a>
+      <a href="#"onclick="redirectToProfile()">Profile</a>
+      <a href="#" onclick="redirectToSettings()">Settings</a>
+      <a  href="#" onclick="redirectToGame()">Game</a>
+      <a  href="#" onclick="logout()">Logout</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()"><i class="gg-profile"></i></button>  
+    </div> 
+
+
+  </nav>
+
+
+
+
+</div> 
+
+ </div>
+  <h4 class="filter-heading2">B   U   Y</h4>
+ <script src="script.js"></script>
+ </body>
+</html>

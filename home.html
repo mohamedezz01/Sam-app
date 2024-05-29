@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="D:\3rd year\web/ICON4.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <meta name="description" content=" Your Simple & Affordable Matchmaker for Finding Your Perfect Home">
+    <meta name="keyword" content="houses,homes,rent,buy,villas,prices">
+    <link href="style.css" rel="stylesheet">
+
+    <title>SAM</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="D:\3rd year\web/ICON4.png" alt="Logo">
+    </div>
+
+ <div class="wrapper">
+
+  
+
+
+  <button class="btnRB" onclick="redirectToDashboard()">
+    <span>Rent</span>
+    <svg width="15px" height="10px" viewBox="0 0 13 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </button>
+
+  <button class="btnRB" style="margin-left: 215px;"onclick="redirectToBuyBoard()" target="_blank"> <span>Buy</span>
+    <svg width="15px" height="10px" viewBox="0 0 18 10">
+      <path d="M1,5 L11,5"></path>
+      <polyline points="8 1 12 5 8 9"></polyline>
+    </svg>
+  </button>
+    
+  <nav class="nav">
+        <div class="nav-logo">
+            <p>SAM</p>          
+        </div>
+      
+    <div class="head">
+      <!-- <h1>
+      Buy or Rent Your Perfect Home
+      </h1> -->
+      <h1 >Welcome    </h1> <h1 id="nameInfo"></h1>
+  </div>
+  <div id="mySidebar" class="sidebar">
+    <!-- <br> -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#" onclick="redirectToHome()">Home</a>
+    <a href="#" onclick="redirectToProfile()">Profile</a>
+    <a href="#" onclick="redirectToSettings()">Settings</a>
+    <a href="#" onclick="redirectToGame()">Game</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()"><i class="gg-profile"></i></button>  
+  </div> 
+ </nav>
+ </div>
+
+   
+  
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/dist/jwt-decode.min.js"></script>
+
+       
+      </body>
+          </html>  
+       

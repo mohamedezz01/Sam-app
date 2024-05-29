@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="D:\3rd year\web/ICON4.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Your Simple & Affordable Matchmaker for Finding Your Perfect Home">
+    <meta name="keyword" content="houses, homes, rent, buy, villas, prices">
+    <link href="style.css" rel="stylesheet">
+
+    <title>SAM</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="D:\3rd year\web/ICON4.png" alt="Logo">
+    </div>
+  
+        <nav class="nav">
+            <div class="nav-logo">
+                <title>SAM</title>
+            </div>
+            <div id="mySidebar" class="sidebar">
+                <!-- <br> -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#"onclick="redirectToHome()">Home</a>
+                <a href="#"onclick="redirectToProfile()">Profile</a>
+                <a href="#" onclick="redirectToSettings()">Settings</a>
+                <a  href="#" onclick="redirectToGame()">Game</a>
+                <a  href="#" onclick="logout()">Logout</a>
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()"><i class="gg-profile"></i></button>  
+              </div> 
+        </nav>
+        <div class="wrapper">
+            
+
+
+
+              <h1 class="ghead">Spelling Word Game</h1>
+              <br> <br> 
+              <div class="gword" id="word"></div>
+              <br> 
+              <input class="ginput" type="text" id="userInput" placeholder="Enter your answer">
+              <br> <br> 
+              <button class="gbutton2" onclick="changeWord()">Change Word</button>
+              <button class="gbutton" onclick="checkSpelling()">Check</button>
+
+              <p class="gcounter" id="correctCount"></p>
+                <p class="gcounter2" id="incorrectCount"></p>
+              <p class="gresult" id="CorrectResult"></p>
+              <p class="gresult2" id="IncorrectResult"></p>
+            </div>
+       
+    
+        <footer>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Email: SAMapp@modernacademy.com</p>
+                <p>Phone: +20 102-6393-722</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 SAM. All Rights Reserved.</p>
+        </footer>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
